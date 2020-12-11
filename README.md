@@ -25,9 +25,11 @@ Now the following plugin liberay that this scaffold support:
 
 2. Support Mongodb
 
+3. Support Mysql
+
 3. Support Celery and Celery-Beat
 
-4. Support AliyunCode
+4. Support Aliyun Short Message
 
 5. Support Hash encryption
 
