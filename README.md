@@ -4,7 +4,7 @@
 
 This is a scaffold based on the flash framework, including common plugins, such as redis, mongodb, mysql, jwt. 
 
-The project can be developed based on this scaffold.
+Your project can be developed based on this scaffold.
 
 In the future, i will continue to improve this scaffold, any person who interested in can join me to perfect this scaffold 
 
@@ -16,3 +16,19 @@ In the future, i will continue to improve this scaffold, any person who interest
 2. pip install -r requirements.txt
 
 3. developing~
+
+### Details
+
+Now the following plugin liberay that this scaffold support:
+
+1. Support Redis
+
+2. Supprt Mongodb
+
+3. Support Celery
+
+4. Support AliyunCode
+
+5. Support Hash encryption
+
+6. Support Jwt
