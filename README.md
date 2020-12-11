@@ -25,10 +25,18 @@ Now the following plugin liberay that this scaffold support:
 
 2. Support Mongodb
 
-3. Support Celery
+3. Support Celery and Celery-Beat
 
 4. Support AliyunCode
 
 5. Support Hash encryption
 
 6. Support Jwt
+
+### Service you need
+
+Please go to official website to download Redis, Mongodb
+
+### Startup File
+
+`python -m wsgi` or `python manage.py runserver`
