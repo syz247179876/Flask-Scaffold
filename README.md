@@ -35,6 +35,12 @@ Now the following plugin liberay that this scaffold support:
 
 6. Support Jwt
 
+7. Support Nginx Config
+
+8. Support Gunicon Config
+
+9. Support Supervisord Config to manage above progresses
+
 ### Service you need
 
 Please go to official website to download Redis, Mongodb
