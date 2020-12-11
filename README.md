@@ -23,7 +23,7 @@ Now the following plugin liberay that this scaffold support:
 
 1. Support Redis
 
-2. Supprt Mongodb
+2. Support Mongodb
 
 3. Support Celery
 
