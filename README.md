@@ -11,11 +11,11 @@ In the future, i will continue to improve this scaffold, any person who interest
 
 ### How to Start
 
-1. git clone https://github.com/syz247179876/Flask-Start.git
+1. `git clone https://github.com/syz247179876/Flask-Start.git`
 
-2. pip install -r requirements.txt
+2. `pip install -r requirements.txt`
 
-3. developing~
+3. developing and enjoy yourself
 
 ### Details
 
