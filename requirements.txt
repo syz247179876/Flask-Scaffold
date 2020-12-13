@@ -23,6 +23,7 @@ distlib==0.3.1
 dnspython==2.0.0
 entrypoints==0.3
 filelock==3.0.12
+flasgger==0.9.5
 Flask==1.1.2
 Flask-Cache==0.13.1
 Flask-Login==0.5.0
@@ -77,6 +78,7 @@ pyparsing==2.4.7
 pyrsistent==0.17.3
 python-dateutil==2.8.1
 pytz==2020.1
+PyYAML==5.3.1
 pyzmq==19.0.2
 redis==3.5.3
 redis-py-cluster==2.1.0

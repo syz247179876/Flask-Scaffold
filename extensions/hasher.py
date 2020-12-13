@@ -10,8 +10,10 @@ from extensions.extensions import encryption
 from application.utils.exception import ImproperlyConfigured
 from flask import current_app
 
+
 def get_salt(salt):
     return salt or 'https://syzzjw.cn/'
+
 
 def check_password(raw_password, password, salt=None):
     """
@@ -19,7 +21,7 @@ def check_password(raw_password, password, salt=None):
     Validating the password supported
     """
     salt = get_salt(salt)
-    if password == encryption.encode(raw_password,salt):
+    if password == encryption.encode(raw_password, salt):
         return True
     return False
 
@@ -37,7 +39,6 @@ def make_password(password, salt=None, hasher='default'):
 
     salt = get_salt(salt)
     return encryption.encode(password, salt)
-
 
 
 @functools.lru_cache()
@@ -77,7 +78,7 @@ def get_hasher(algorithm='default'):
         return algorithm
 
     elif algorithm == 'default':
-        return get_hashers()[0] # retrieve the first algorithm of list
+        return get_hashers()[0]  # retrieve the first algorithm of list
 
     else:
         hashers = get_hashers_by_algorithm()

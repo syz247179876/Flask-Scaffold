@@ -57,7 +57,7 @@ class ResponseCode:
 
     @property
     def validation_error(self):
-        self.result.update(dict(code=VERIFICATION_CODE_ERROR, msg='校验错误', status='error'))
+        self.result.update(dict(code=VERIFICATION_CODE_SUCCESS, msg='校验成功', status='success'))
         return self.result
 
 

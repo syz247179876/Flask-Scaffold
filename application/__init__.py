@@ -3,7 +3,7 @@
 # @Author : 司云中
 # @File : __init__.py.py
 # @Software: Pycharm
-from flask import Flask
+from flask import Flask, got_request_exception
 
 from configs import load_config
 from extensions.extensions import celery_app, redis_app, sms
@@ -50,8 +50,9 @@ def create_app():
 
 
     with app.app_context():
-        get_user_model(app) # 注册用户模型表
-        register_all_model(app)   # 注册其余模型表,在应用上下文内通过current_app.config.get('models').get(model_name)进行访问
+        # 手动推送上下文
+        # get_user_model(app) # 注册用户模型表
+        pass
 
     got_request_exception.connect(log_exception, app) # 记录请求的异常
 
