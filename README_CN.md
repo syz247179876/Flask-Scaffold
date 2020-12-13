@@ -1,8 +1,5 @@
 ### 各位好呀~
 
-
-[中文版](https://github.com/syz247179876/Flask-Scaffold/blob/main/README_CN.md)
-
 [英文版](https://github.com/syz247179876/Flask-Scaffold/blob/main/README.md)
 
 ### 介绍
