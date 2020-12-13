@@ -18,7 +18,7 @@ from jwt.exceptions import ExpiredSignatureError, DecodeError
 from application.signals.signal import update_session_user_signal, generate_token_signal, send_code_signal
 from application.utils.exception import SessionUserInformationException, ServerTokenExpire, TokenDecodeError
 from extensions.redis import manager_redis_operation
-
+from application.tasks.send_code import send_phone
 CACHE_NAME = 'code'
 
 
@@ -167,7 +167,6 @@ class Signal(object):
         tasks.update(
             {
                 send_phone.__name__: celery.task(send_phone),
-                timer_rewrite_step_number.__name__: celery.task(timer_rewrite_step_number)
             }
         )  # 注册send_phone任务
         return tasks

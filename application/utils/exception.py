@@ -113,6 +113,12 @@ INTEGRAL_INSUFFICIENT_ERROR = 1020
 DATA_UNIVERSAL_EXCEPTION = 1021
 # API权限校验异常
 API_PERMISSION_EXCEPTION = 1022
+# OSS文件上传异常
+UPLOAD_FILE_OSS_ERROR = 1023
+# 文件已经存在
+FILE_EXISTED = 1024
+# 删除文件失败
+DELETE_FILE_ERROR = 1025
 
 
 class ApiException(werkzeug.exceptions.HTTPException):
@@ -358,6 +364,37 @@ class ApiPermissionError(ApiException):
 
     def __init__(self):
         super().__init__(self.code, self.error_code, self.description)
+
+class UploadFileOSSError(ApiException):
+    """上传文件到OSS异常"""
+
+    code = HTTP_503_SERVICE_UNAVAILABLE
+    error_code = UPLOAD_FILE_OSS_ERROR
+    description = 'Upload File error'
+
+    def __init__(self):
+        super().__init__(self.code, self.error_code, self.description)
+
+class FileExistedException(ApiException):
+    """上传文件,但文件已经存在"""
+
+    code = HTTP_400_BAD_REQUEST
+    error_code = FILE_EXISTED
+    description = 'File Existed'
+
+    def __init__(self):
+        super().__init__(self.code, self.error_code, self.description)
+
+class DeleteFileOSSError(ApiException):
+    """删除文件,但文件不存在"""
+
+    code = HTTP_503_SERVICE_UNAVAILABLE
+    error_code = DELETE_FILE_ERROR
+    description = 'Delete file error'
+
+    def __init__(self):
+        super().__init__(self.code, self.error_code, self.description)
+
 
 class ImproperlyConfigured(Exception):
     """Flask is somehow improperly configured"""

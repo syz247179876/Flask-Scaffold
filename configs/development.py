@@ -141,6 +141,14 @@ class DevelopmentConfig(DefaultConfig):
     TEMPLATES_CODE_MODIFY_PASSWORD = ''
     TEMPLATES_CODE_RETRIEVE_PASSWORD = ''
 
+    # OSS对象存储
+
+    OSS_ENDPOINT = ''
+
+    OSS_BUCKET_NAME = ''
+
+    OSS_BASE_URL = '' # 用于拼接返回给用户的url
+
     # 加密算法
     PASSWORD_HASHERS = [
         'application.utils.crypto.pbkdf2_crypto'

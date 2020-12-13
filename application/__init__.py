@@ -9,6 +9,7 @@ from configs import load_config
 from extensions.extensions import celery_app, redis_app, sms
 from extensions.database import db
 from application.signals.handle_signal import signal
+from extensions.oss import oss
 from log import setup_log
 
 CONFIGS = {
@@ -47,6 +48,7 @@ def create_app():
     sms.init_app(app)          # 注册阿里云短信服务
     signal.init_app(app)  # 注册发送验证码信号
     db.init_app(app)           # 注册mongodb实例
+    oss.init_app(app)  # 注册OSS服务
 
 
     with app.app_context():
