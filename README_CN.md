@@ -1,5 +1,10 @@
 ### 各位好呀~
 
+
+[中文版](https://github.com/syz247179876/Flask-Scaffold/blob/main/README_CN.md)
+
+[英文版](https://github.com/syz247179876/Flask-Scaffold/blob/main/README.md)
+
 ### 介绍
 
 这是一个基于flask框架的脚手架,目前已经已成了一些常用的插件,有些插件是本人自己集成到application中的,可能考虑不全,还请谅解,我会不断的完善!
