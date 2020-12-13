@@ -1,5 +1,9 @@
 ### Hello EveryBody!
 
+[中文版](https://github.com/syz247179876/Flask-Scaffold/blob/main/README_CN.md)
+
+[英文版](https://github.com/syz247179876/Flask-Scaffold/blob/main/README.md)
+
 ### Introduction
 
 This is a scaffold based on the flask framework, including common plugins, such as redis, mongodb, mysql, jwt. 
