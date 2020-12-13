@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This is a scaffold based on the flash framework, including common plugins, such as redis, mongodb, mysql, jwt. 
+This is a scaffold based on the flask framework, including common plugins, such as redis, mongodb, mysql, jwt. 
 
 Your project can be developed based on this scaffold.
 
