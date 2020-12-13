@@ -48,3 +48,62 @@ Please go to official website to download Redis, Mongodb
 ### Startup File
 
 `python -m wsgi` or `python manage.py runserver`
+
+### Project File directory
+
+```shell
+root:[/home/syz/FlaskLearning/Flask-Start]
++--requirements.txt
++--wsgi.py
++--tests
+|      +--__init__.py
++--depoly
+|      +--supervisord_flask
+|      +--__init__.py
+|      +--nginx.conf
+|      +--gunicorn.conf
++--application
+|      +--urls
+|      |      +--__init__.py
+|      |      +--user_urls.py
+|      +--tasks
+|      |      +--__init__.py
+|      |      +--send_code.py
+|      +--__init__.py
+|      +--signals
+|      |      +--__init__.py
+|      |      +--signal.py
+|      |      +--handle_signal.py
+|      +--utils
+|      |      +--qq_oauth.py
+|      |      +--__init__.py
+|      |      +--api_permission.py
+|      |      +--exception.py
+|      |      +--success_code.py
+|      |      +--json.py
+|      |      +--fields.py
+|      +--models
+|      |      +--__init__.py
+|      +--api
+|      |      +--__init__.py
++--extensions
+|      +--__init__.py
+|      +--hasher.py
+|      +--sms.py
+|      +--extensions.py
+|      +--celery_app.py
+|      +--crypto.py
+|      +--database.py
+|      +--redis.py
++--logs
++--README.md
++--configs
+|      +--__init__.py
+|      +--testing.py
+|      +--default.py
+|      +--development.py
+|      +--production.py
++--log.py
++--manage.py
+```
+
