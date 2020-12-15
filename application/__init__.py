@@ -6,9 +6,10 @@
 from flask import Flask, got_request_exception
 
 from configs import load_config
-from extensions.extensions import celery_app, redis_app, sms
+from extensions.celery_app import celery_app
+from extensions.extensions import redis_app, sms
 from extensions.database import db
-from application.signals.handle_signal import signal
+from application.signals.default_handle import signal
 from extensions.oss import oss
 from log import setup_log
 

@@ -158,24 +158,8 @@ def append_jwt(sender, response):
         pass
 
 
-class Signal(object):
+class HandleSignal(object):
     """处理发送验证码信号"""
-
-    def register_task(self, celery):
-        """注册任务"""
-        tasks = {}
-        tasks.update(
-            {
-                send_phone.__name__: celery.task(send_phone),
-            }
-        )  # 注册send_phone任务
-        return tasks
-
-    def configure_celery(self, app):
-        """配置celery"""
-        celery = app.config.get('CELERY_INSTANCE')  # 导入celery
-        tasks = self.register_task(celery)
-        setattr(app, 'tasks', tasks)
 
     def register_signal(self, signal, callback):
         """注册信号"""
@@ -187,7 +171,5 @@ class Signal(object):
         self.register_signal(generate_token_signal, generate_token)  # 生成token
         self.register_signal(request_started, parse_jwt)  # 解析jwt,获取用户对象,立即登入
         self.register_signal(request_finished, append_jwt)  # 追加jwt
-        self.configure_celery(app)
 
-
-signal = Signal()
+signal = HandleSignal()

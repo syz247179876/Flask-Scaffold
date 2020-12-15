@@ -119,6 +119,10 @@ class DevelopmentConfig(DefaultConfig):
 
     CELERY_TASK_NAME = ''
 
+    CELERY_TASKS_FUNC = [  # 自定义注册任务
+        # 'application.tasks.user_task.send_phone',
+    ]
+
     # 异步任务
     CELERY_BEAT_SCHEDULE = {
         'rewrite_step_counter': {
