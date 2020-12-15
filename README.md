@@ -43,6 +43,8 @@ Now the following plugin liberay that this scaffold support:
 
 9. Support Supervisord Config to manage above progresses
 
+10.Support OSS
+
 ### Service you need
 
 Please go to official website to download Redis, Mongodb

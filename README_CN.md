@@ -42,6 +42,8 @@
 
 9. 支持 Supervisord ,已在脚手架中放置supervisord_flask
 
+10.支持 oss
+
 ### 您需要的额外的服务
 
 请去官网安装配置好redis,mongodb,mysql等服务
