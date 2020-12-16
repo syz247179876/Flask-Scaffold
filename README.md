@@ -29,21 +29,21 @@ Now the following plugin liberay that this scaffold support:
 
 3. Support Mysql
 
-3. Support Celery and Celery-Beat
+4. Support Celery and Celery-Beat
 
-4. Support Aliyun Short Message
+5. Support Aliyun Short Message
 
-5. Support Hash encryption
+6. Support Hash encryption
 
-6. Support Jwt
+7. Support Jwt
 
-7. Support Nginx Config
+8. Support Nginx Config
 
-8. Support Gunicon Config
+9. Support Gunicon Config
 
-9. Support Supervisord Config to manage above progresses
+10. Support Supervisord Config to manage above progresses
 
-10.Support OSS
+11. Support OSS
 
 ### Service you need
 
