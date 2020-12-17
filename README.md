@@ -57,13 +57,13 @@ Please go to official website to download Redis, Mongodb
 
 ```shell
 root:[/home/syz/FlaskLearning/Flask-Start]
++--tree.py
 +--requirements.txt
 +--wsgi.py
 +--tests
 |      +--__init__.py
 +--depoly
 |      +--supervisord_flask
-|      +--__init__.py
 |      +--nginx.conf
 |      +--gunicorn.conf
 +--application
@@ -76,8 +76,8 @@ root:[/home/syz/FlaskLearning/Flask-Start]
 |      +--__init__.py
 |      +--signals
 |      |      +--__init__.py
+|      |      +--default_handle.py
 |      |      +--signal.py
-|      |      +--handle_signal.py
 |      +--utils
 |      |      +--qq_oauth.py
 |      |      +--__init__.py
@@ -93,6 +93,7 @@ root:[/home/syz/FlaskLearning/Flask-Start]
 +--extensions
 |      +--__init__.py
 |      +--hasher.py
+|      +--oss.py
 |      +--sms.py
 |      +--extensions.py
 |      +--celery_app.py
@@ -100,6 +101,8 @@ root:[/home/syz/FlaskLearning/Flask-Start]
 |      +--database.py
 |      +--redis.py
 +--logs
+|      +--log-40
++--README_CN.md
 +--README.md
 +--configs
 |      +--__init__.py
