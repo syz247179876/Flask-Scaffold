@@ -28,21 +28,21 @@
 
 3. 支持 Mysql
 
-3. 支持 Celery and Celery-Beat
+4. 支持 Celery and Celery-Beat
 
-4. 支持 Aliyun SMS
+5. 支持 Aliyun SMS
 
-5. 支持 Hash encryption
+6. 支持 Hash encryption
 
-6. 支持 Jwt
+7. 支持 Jwt
 
-7. 支持 Nginx ,已在脚手架中放置Nginx.conf
+8. 支持 Nginx ,已在脚手架中放置Nginx.conf
 
-8. 支持 Gunicon ,已在脚手架中放置Gunicon.conf
+9. 支持 Gunicon ,已在脚手架中放置Gunicon.conf
 
-9. 支持 Supervisord ,已在脚手架中放置supervisord_flask
+10. 支持 Supervisord ,已在脚手架中放置supervisord_flask
 
-10.支持 oss
+11. 支持 oss
 
 ### 您需要的额外的服务
 
